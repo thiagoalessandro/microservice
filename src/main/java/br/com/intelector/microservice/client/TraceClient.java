@@ -4,9 +4,9 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient("microservice-second")
+@FeignClient("api-gateway-web")
 public interface TraceClient {
 
-    @RequestMapping(value = "/microserviceSecond/trace", method = RequestMethod.GET)
+    @RequestMapping(value = "/api/microserviceSecond/trace", method = RequestMethod.GET)
     String trace();
 }

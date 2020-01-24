@@ -11,7 +11,13 @@ public class TraceService {
     private TraceClient traceClient;
 
     public String trace(){
-        return traceClient.trace();
+        String result;
+        try {
+            result = traceClient.trace();
+        }catch (Exception e){
+            result = e.getMessage();
+        }
+        return result;
     }
 
 }
