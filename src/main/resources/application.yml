@@ -1,6 +1,6 @@
 spring:
   application:
-    name: microservice-template
+    name: microservice-main
 server:
   port: 0
 eureka:
