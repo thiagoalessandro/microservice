@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient("api-gateway-web")
 public interface TraceClient {
 
-    @RequestMapping(value = "/api/microserviceSecond/trace", method = RequestMethod.GET)
+    @RequestMapping(value = "/microserviceSecond/trace", method = RequestMethod.GET)
     String trace();
 }
